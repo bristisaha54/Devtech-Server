@@ -2,6 +2,9 @@
 var express = require("express");
 var express = express();
 
+// Port Initialization...
+var port = process.env.PORT || 3000;
+
 // Request Body Parser Initialization...
 var bodyParser = require('body-parser');
 express.use(bodyParser.json());
@@ -11,8 +14,8 @@ express.use(bodyParser.urlencoded({ extended: true }));
 var Error = require("./models/error.model");
 
 // Server Startup...
-express.listen(3000, () => {
-    console.log("Server running on port 3000");
+express.listen(port, () => {
+    console.log("Server running on port " + port);
 });
 
 // Dummy Data...
