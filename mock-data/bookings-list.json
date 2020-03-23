@@ -1,0 +1,41 @@
+[
+    {
+        "address" : "AB-1, Salt Lake, Sector-1",
+        "city" : "Kolkata",
+        "state" : "West Bengal",
+        "pincode" : "700064",
+        "bookingId" : "BK12FB",
+        "compensatedAppointmentFees" : "600",
+        "date" : "12/04/2020",
+        "lawyerId" : "L21AP",
+        "ngoId" : "N99KF",
+        "time" : "12:30 p.m.",
+        "userId" : "U37KB"
+    },
+    {
+        "address" : "BK-100, Salt Lake, Sector-1",
+        "city" : "Kolkata",
+        "state" : "West Bengal",
+        "pincode" : "700064",
+        "bookingId" : "BK98PO",
+        "compensatedAppointmentFees" : "500",
+        "date" : "10/04/2020",
+        "lawyerId" : "L33BQ",
+        "ngoId" : "N23AN",
+        "time" : "03:00 p.m.",
+        "userId" : "U44BP"
+    },
+    {
+        "address" : "CC-12, Salt Lake, Sector-1",
+        "city" : "Kolkata",
+        "state" : "West Bengal",
+        "pincode" : "700064",
+        "bookingId" : "BK10IO",
+        "compensatedAppointmentFees" : "400",
+        "date" : "01/04/2020",
+        "lawyerId" : "L43PP",
+        "ngoId" : "N89KN",
+        "time" : "11:00 p.m.",
+        "userId" : "U88UY"
+    }
+]

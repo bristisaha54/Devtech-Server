@@ -1,0 +1,35 @@
+[
+    {
+        "id" : "U88UY",
+        "name" : "Madhobi Shaha",
+        "emailId" : "bristi.saha53@gmail.com",
+        "password" : "abcd1234",
+        "address" : "AA-1, Salt Lake",
+        "city" : "Kolkata",
+        "state" : "West Bengal",
+        "pincode" : "700064",
+        "contact" : "(+91) 8599951555"
+    },
+    {
+        "id" : "U44BP",
+        "name" : "Bish John",
+        "emailId" : "bish.john@gmail.com",
+        "password" : "abcd1234",
+        "address" : "BB-1, Salt Lake",
+        "city" : "Kolkata",
+        "state" : "West Bengal",
+        "pincode" : "700064",
+        "contact" : "(+91) 9812746123"
+    },
+    {
+        "id" : "U37KB",
+        "name" : "Bandhobi Saha",
+        "emailId" : "bandhobi.saha@gmail.com",
+        "password" : "abcd1234",
+        "address" : "BA-1, Salt Lake",
+        "city" : "Kolkata",
+        "state" : "West Bengal",
+        "pincode" : "700064",
+        "contact" : "(+91) 9876255123"
+    }
+]
