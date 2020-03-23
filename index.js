@@ -21,6 +21,11 @@ var lawyersList = require("./mock-data/lawyers-list.json");
 var usersList = require("./mock-data/users-list.json");
 var bookingsList = require("./mock-data/bookings-list.json");
 
+// Connection Test...
+express.get("/", (req, res, next) => {
+    res.json({ id : "1234"});
+})
+
 // Get NGO List...
 express.get("/GetNgoList", (req, res, next) => {
     res.json(ngoList);
