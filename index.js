@@ -26,7 +26,7 @@ var bookingsList = require("./mock-data/bookings-list.json");
 
 // Connection Test...
 express.get("/", (req, res, next) => {
-    res.json({ id : "1234"});
+    res.json({ id : "My name is Bristi"});
 })
 
 // Get NGO List...
