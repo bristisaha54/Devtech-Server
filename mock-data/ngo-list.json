@@ -1,47 +1,35 @@
 [
     {
-        "address" : "234, Chowringhee Square",
-        "city" : "Kolkata",
+        "location" : "Kolkata",
         "contact" : "(+91) 9283746578",
         "emailId" : "astha.ngo@gmail.com",
         "id" : "N23AN",
-        "lawyerAssociations" : ["L21AP", "L33BQ"],
-        "maximumCompensationPercentage" : "60",
-        "maximumCompensationLimit" : "5000",
         "name" : "Astha",
         "password" : "abcd1234",
-        "pincode" : "700001",
-        "state" : "West Bengal",
-        "yearEstablished" : "2002"
+        "yearEstablished" : "2002",
+        "financialAid": "5000",
+        "userId": "asn123"
     },
     {
-        "address" : "2, Madan Mitra Square",
-        "city" : "Kolkata",
+        "location" : "Birbhum",
         "contact" : "(+91) 9188221192",
         "emailId" : "katha.ngo@gmail.com",
         "id" : "N99KF",
-        "lawyerAssociations" : ["L21AP", "L43PP"],
-        "maximumCompensationPercentage" : "80",
-        "maximumCompensationLimit" : "2000",
         "name" : "Katha",
         "password" : "abcd1234",
-        "pincode" : "700012",
-        "state" : "West Bengal",
-        "yearEstablished" : "2006"
+        "yearEstablished" : "2006",
+        "financialAid": "6000",
+        "userId": "kn123"
     },
     {
-        "address" : "12, Ballygunge Place",
-        "city" : "Kolkata",
+        "location" : "Chandigarh",
         "contact" : "(+91) 9281163812",
         "emailId" : "karma.ngo@gmail.com",
         "id" : "N89KN",
-        "lawyerAssociations" : ["L21AP", "L33BQ", "L43PP"],
-        "maximumCompensationPercentage" : "70",
-        "maximumCompensationLimit" : "4000",
         "name" : "Karma",
         "password" : "abcd1234",
-        "pincode" : "700019",
-        "state" : "West Bengal",
-        "yearEstablished" : "2009"
+        "yearEstablished" : "2009",
+        "financialAid": "10000",
+        "userId": "ksn123"
     }
 ]
