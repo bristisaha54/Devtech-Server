@@ -2,12 +2,7 @@ module.exports = class {
     constructor() {
         this.id = "";
         this.name = "";
-        this.emailId = "";
+        this.username = "";
         this.password = "";
-        this.address = "";
-        this.city = "";
-        this.state = "";
-        this.pincode = "";
-        this.contact = "";
     }
 }

@@ -3,15 +3,11 @@ module.exports = class {
         this.id = "";
         this.name = "";
         this.contact = "";
-        this.address = "";
-        this.city = "";
-        this.state = "";
-        this.pincode = "";
+        this.location = "";
         this.yearEstablished = "";
-        this.maximumCompensationPercentage = "";
-        this.maximumCompensationLimit = "";
+        this.financialAid = "";
         this.emailId = "";
         this.password = "";
-        this.lawyerAssociations = "";
+        this.username = "";
     }
 }

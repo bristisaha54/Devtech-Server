@@ -3,18 +3,12 @@ module.exports = class {
         this.id = "";
         this.name = "";
         this.startYearOfPractice = "";
-        this.address = "";
-        this.city = "";
-        this.state = "";
-        this.pincode = "";
-        this.emailId = "";
-        this.contact = "";
-        this.firstAreaOfSpecialization = "";
-        this.secondAreaOfSpecialization = "";
+        this.totalExperience = "";
+        this.areaOfSpecialization = "";
         this.almaMater = "";
         this.password = "";
-        this.qualification = "";
-        this.ngoAssociations = "";
+        this.username = "";
         this.appointmentFees = "";
+        this.location = "";
     }
 }
