@@ -7,8 +7,10 @@ module.exports = class {
         this.areaOfSpecialization = "";
         this.almaMater = "";
         this.password = "";
-        this.username = "";
+        this.userId = "";
         this.appointmentFees = "";
         this.location = "";
+        this.emailId = "";
+        this.contact = "";
     }
 }

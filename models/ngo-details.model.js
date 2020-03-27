@@ -8,6 +8,6 @@ module.exports = class {
         this.financialAid = "";
         this.emailId = "";
         this.password = "";
-        this.username = "";
+        this.userId = "";
     }
 }
