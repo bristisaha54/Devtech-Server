@@ -5,7 +5,7 @@ module.exports = class {
         this.databaseConnectionObject = sqlObject.createConnection({
             host: "us-cdbr-iron-east-01.cleardb.net",
             user: "b27a07a4eaaead",
-            password: "b0233fc4*",
+            password: "b0233fc4",
             database: "heroku_97950ac6928757d"
         });
 
