@@ -6,7 +6,7 @@ module.exports = class {
 
     getLawyersList() {
         let query = "SELECT * from lawyers";
-        return this.dataAccessObject.insert(query);
+        return this.dataAccessObject.retrieve(query);
     }
 
     registerLawyer(lawyer) {
