@@ -28,10 +28,7 @@ var processRequest = require("./business-logic/request-processor");
 
 // Connection Test...
 express.get("/", (req, res, next) => {
-    var p = new processRequest();
-    p.getLawyersList().then(response => {
-        res.json(response);
-    });
+    res.json("Server Running...");
 })
 
 // Get NGO List...
