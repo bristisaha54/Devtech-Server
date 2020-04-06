@@ -27,8 +27,8 @@ var bookingsList = require("./mock-data/bookings-list.json");
 var processRequest = require("./business-logic/request-processor");
 
 // Connection Test...
-var p = new processRequest();
 express.get("/", (req, res, next) => {
+    var p = new processRequest();
     p.registerLawyer({
         "id" : "L21AP",
         "name" : "Suraj Gupta",
