@@ -43,6 +43,8 @@ module.exports = class {
 
                 resolve({ status: isSuccessful, error: error });
             });
+
+            this.databaseConnectionObject.end();
         });
     }
 
@@ -68,6 +70,8 @@ module.exports = class {
                     resolve({ status: isSuccessful, error: error });
                 }
             });
+
+            this.databaseConnectionObject.end();
         });
     }
 }

@@ -38,7 +38,7 @@ express.get("/GetNgoList", (req, res, next) => {
 
 // Get Lawyers List...
 express.get("/GetLawyersList", (req, res, next) => {
-    var p = new processRequest();
+    let p = new processRequest();
     p.getLawyersList().then(response => {
         res.json(response);
     });
@@ -47,7 +47,7 @@ express.get("/GetLawyersList", (req, res, next) => {
 // Register New Lawyer...
 express.post("/RegisterLawyer", (req, res) => {
     if (req != null && req.body != null) {
-        var p = new processRequest();
+        let p = new processRequest();
         p.registerLawyer(req.body).then(response => {
             res.json(response);
         });
