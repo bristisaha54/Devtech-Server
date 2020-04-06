@@ -41,7 +41,28 @@ express.get("/GetNgoList", (req, res, next) => {
 
 // Get Lawyers List...
 express.get("/GetLawyersList", (req, res, next) => {
-    res.json(lawyersList);
+    var p = new processRequest();
+    p.getLawyersList().then(response => {
+        res.json(response);
+    });
+});
+
+// Register New Lawyer...
+express.post("/RegisterLawyer", (req, res) => {
+    if (req != null && req.body != null) {
+        var p = new processRequest();
+        p.registerLawyer(req.body).then(response => {
+            res.json(response);
+        });
+    }
+    else {
+        let error = new Error();
+        error = {
+            errorType: "Invalid Request",
+            errorMessage: "Lawyer ID is either of invalid format or Request structure is invalid"
+        };
+        res.json(error);
+    }
 });
 
 // Get Users List...

@@ -12,7 +12,7 @@ module.exports = class {
     registerLawyer(lawyer) {
         let query = `INSERT INTO lawyers (
             id,
-            lawyerName,
+            name,
             startYearOfPractice,
             totalExperience,
             areaOfSpecialization,
