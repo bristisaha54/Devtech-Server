@@ -24,9 +24,27 @@ var lawyersList = require("./mock-data/lawyers-list.json");
 var usersList = require("./mock-data/users-list.json");
 var bookingsList = require("./mock-data/bookings-list.json");
 
+var processRequest = require("./business-logic/request-processor");
+
 // Connection Test...
+var p = new processRequest();
 express.get("/", (req, res, next) => {
-    res.json({ id : "Connected to Server..."});
+    p.registerLawyer({
+        "id" : "L21AP",
+        "name" : "Suraj Gupta",
+        "startYearOfPractice" : "22/10/2011",
+        "location" : "Kolkata",
+        "emailId" : "suraj.gupta@gmail.com",
+        "contact" : "(+91) 9885812375",
+        "areaOfSpecialization" : "Criminology",
+        "almaMater" : "Delhi Law College",
+        "password" : "abcd1234",
+        "userId" : "sg123",
+        "appointmentFees" : "1000",
+        "totalExperience": "8 years"
+    }).then(response => {
+        res.json(response);
+    });
 })
 
 // Get NGO List...
