@@ -29,20 +29,7 @@ var processRequest = require("./business-logic/request-processor");
 // Connection Test...
 express.get("/", (req, res, next) => {
     var p = new processRequest();
-    p.registerLawyer({
-        "id" : "L21AP",
-        "name" : "Suraj Gupta",
-        "startYearOfPractice" : "22/10/2011",
-        "location" : "Kolkata",
-        "emailId" : "suraj.gupta@gmail.com",
-        "contact" : "(+91) 9885812375",
-        "areaOfSpecialization" : "Criminology",
-        "almaMater" : "Delhi Law College",
-        "password" : "abcd1234",
-        "userId" : "sg123",
-        "appointmentFees" : "1000",
-        "totalExperience": "8 years"
-    }).then(response => {
+    p.getLawyersList().then(response => {
         res.json(response);
     });
 })

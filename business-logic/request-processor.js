@@ -4,6 +4,11 @@ module.exports = class {
         this.dataAccessObject = new DataAccess();
     }
 
+    getLawyersList() {
+        let query = "SELECT * from lawyers";
+        return this.dataAccessObject.insert(query);
+    }
+
     registerLawyer(lawyer) {
         let query = `INSERT INTO lawyers (
             id,
@@ -32,6 +37,6 @@ module.exports = class {
             '` + lawyer.emailId + `',
             '` + lawyer.contact + `'
         )`;
-        return this.dataAccessObject.insertData(query);
+        return this.dataAccessObject.insert(query);
     }
 }

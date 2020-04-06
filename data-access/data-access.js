@@ -26,7 +26,7 @@ module.exports = class {
         });
     }
 
-    insertData(query) {
+    insert(query) {
         return new Promise((resolve, reject) => {
             this.databaseConnectionObject.query(query, function (err, result) {
                 let isSuccessful = "Failed";
@@ -42,6 +42,31 @@ module.exports = class {
                 }
 
                 resolve({ status: isSuccessful, error: error });
+            });
+        });
+    }
+
+    retrieve(query) {
+        return new Promise((resolve, reject) => {
+            this.databaseConnectionObject.query(query, function (err, result) {
+                let isSuccessful = "Failed";
+                let error = {};
+
+                if (err) {
+                    error.errorType = err.code;
+                    error.errorMessage = err.sqlMessage;
+                }
+                else {
+                    error = null;
+                    isSuccessful = "Success";
+                }
+
+                if (result != null) {
+                    resolve(result);
+                }
+                else {
+                    resolve({ status: isSuccessful, error: error });
+                }
             });
         });
     }
